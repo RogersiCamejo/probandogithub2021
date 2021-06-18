@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<h2>Cálculo promedio en JavaScript</h2>
+<form>
+ Nota 1:<br>
+ <input type="text" id="t1">
+ <br>
+ Nota 2:<br>
+ <input type="text" id="t2">
+ <br>
+ Nota 3:<br>
+ <input type="text" id="t3">
+ <br><br>
+ <input type="button" value="Calcular" onclick="Calcular();">
+</form> 
+<p id="promedio"></p>
+</body>
+
+<script> var nombre = prompt ("Ingrese nombre del Alumno") </script>
+
+<script> 
+    function Calcular() { 
+    var vr1 = document.getElementById('t1').value; 
+    var vr2 = document.getElementById('t2').value; 
+    var vr3 = document.getElementById('t3').value; 
+    var p = (parseFloat(vr1)+parseFloat(vr2)+parseFloat(vr3))/3; document.getElementById ("promedio").innerHTML = p;
+    if (p < 4){
+        alert ("Reprobado");
+    }else{
+        alert ("Aprobado")};
+        }
+
+    </script>
+
+    </head>
+    </html>
+

@@ -1,0 +1,1 @@
+var promedio = (parseFloat(vr1)+parseFloat(vr2)+parseFloat(vr3))/3; document.getElementById('promedio').innerHTML = p; 
